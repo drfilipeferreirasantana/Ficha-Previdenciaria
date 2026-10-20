@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha de Triagem Previdenciária | Filipe Ferreira Advogado OAB/ES 37.159</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Montserrat",sans-serif;background:#f4f1eb;color:#1a2235;min-height:100vh}
+.hero{background:#1a2235;padding:2.5rem 1rem 4rem;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(184,150,62,0.12)}
+.hero::after{content:"";position:absolute;bottom:-100px;left:-60px;width:280px;height:280px;border-radius:50%;border:1px solid rgba(200,205,214,0.08)}
+.hero-symbol{margin-bottom:1rem;opacity:1}
+.logo-name{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;color:#fff;letter-spacing:0.16em;text-align:center}
+.gold-line{width:48px;height:1px;background:#b8963e;margin:10px auto}
+.logo-sub{font-size:10px;font-weight:500;color:#d4af6a;letter-spacing:0.22em;text-align:center}
+.logo-oab{font-size:10px;color:#c8cdd6;letter-spacing:0.1em;text-align:center;margin-top:4px}
+.wrap{max-width:640px;margin:-2.5rem auto 3rem;padding:0 1rem;position:relative;z-index:10}
+.card{background:#fff;border-radius:3px;box-shadow:0 8px 48px rgba(26,34,53,0.13);overflow:hidden}
+.card-intro{background:#1a2235;padding:1.25rem 1.75rem;border-left:3px solid #b8963e}
+.card-intro p{font-size:12px;color:#c8cdd6;line-height:1.85;letter-spacing:0.02em}
+.body{padding:1.75rem}
+.sec{margin-bottom:1.75rem}
+.tag{display:inline-block;font-size:9px;font-weight:600;letter-spacing:0.18em;color:#b8963e;border:1px solid #b8963e;padding:3px 10px;margin-bottom:1rem;text-transform:uppercase}
+.lbl{font-size:12px;font-weight:500;color:#1a2235;margin-bottom:6px;display:block;letter-spacing:0.04em}
+.hint{font-size:11px;color:#8a8f9a;margin-bottom:8px;display:block}
+.req{color:#c0392b;margin-left:2px}
+input[type=text],input[type=tel],input[type=email],input[type=date],textarea{width:100%;font-size:13px;font-family:"Montserrat",sans-serif;padding:10px 14px;border:1px solid #ddd;border-radius:2px;background:#fafafa;color:#1a2235;outline:none;transition:border 0.2s;resize:vertical}
+input:focus,textarea:focus{border-color:#b8963e;background:#fff}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.div{height:1px;background:linear-gradient(90deg,transparent,#d4c9b0,transparent);margin:1.75rem 0}
+.rg{display:flex;flex-direction:column;gap:6px}
+.rr{flex-direction:row;flex-wrap:wrap;gap:6px}
+.rr .ro{flex:1;min-width:120px}
+.ro{display:flex;align-items:center;gap:10px;padding:9px 14px;border:1px solid #e0e0e0;border-radius:2px;cursor:pointer;transition:all 0.15s;background:#fafafa}
+.ro:hover{border-color:#d4af6a}
+.ro.sel{border-color:#b8963e;background:#fdf9f0}
+.ro input{accent-color:#b8963e;width:14px;height:14px;flex-shrink:0}
+.ro span{font-size:12px;color:#1a2235}
+.cg{display:grid;grid-template-columns:1fr;gap:6px}
+.cg2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.co{display:flex;align-items:flex-start;gap:9px;padding:9px 12px;border:1px solid #e0e0e0;border-radius:2px;cursor:pointer;transition:all 0.15s;background:#fafafa}
+.co:hover{border-color:#d4af6a}
+.co.sel{border-color:#b8963e;background:#fdf9f0}
+.co input{accent-color:#b8963e;width:14px;height:14px;flex-shrink:0;margin-top:2px}
+.co span{font-size:11.5px;color:#1a2235;line-height:1.45}
+.sw{display:flex;gap:6px;margin-top:2px}
+.sb{width:38px;height:38px;border:1px solid #ddd;border-radius:2px;background:#fafafa;font-size:13px;font-family:"Montserrat",sans-serif;cursor:pointer;color:#8a8f9a;transition:all 0.15s}
+.sb:hover{border-color:#b8963e;color:#b8963e}
+.sb.sel{background:#b8963e;border-color:#b8963e;color:#fff;font-weight:500}
+.sl{display:flex;justify-content:space-between;margin-top:5px}
+.slb{font-size:10px;color:#8a8f9a}
+.cc{font-size:10px;color:#8a8f9a;text-align:right;margin-top:4px}
+.er{font-size:11px;color:#c0392b;margin-top:5px;display:none}
+.warn{background:#fdf6e8;border-left:3px solid #b8963e;padding:0.8rem 1rem;margin:0.9rem 0;border-radius:2px}
+.warn p{font-size:11.5px;color:#6b5620;line-height:1.7}
+.warn p strong{color:#1a2235}
+.lgpd{background:#fdf6e8;border-left:3px solid #b8963e;padding:0.8rem 1rem;border-radius:2px}
+.lgpd p{font-size:11.5px;color:#6b5620;line-height:1.7}
+.wbtn{display:block;width:100%;padding:15px;background:#25D366;border:none;border-radius:2px;color:#fff;font-size:13px;font-weight:600;font-family:"Montserrat",sans-serif;letter-spacing:0.1em;cursor:pointer;text-align:center;text-decoration:none;text-transform:uppercase;transition:opacity 0.15s}
+.wbtn:hover{opacity:0.9}
+.hl{font-size:11px;color:#8a8f9a;text-align:center;margin-top:10px;line-height:1.7}
+.foot{text-align:center;padding:1.25rem;border-top:1px solid #eee;background:#fafafa}
+.foot p{font-size:10px;color:#8a8f9a;letter-spacing:0.06em;line-height:1.8}
+@media(max-width:480px){.g2{grid-template-columns:1fr}.cg2{grid-template-columns:1fr}.rr .ro{min-width:100%}.logo-name{font-size:22px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg class="hero-symbol" width="110" height="110" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="60,10 105,82 15,82" fill="none" stroke="white" stroke-width="9" stroke-linejoin="miter"/>
+    <polygon points="60,110 15,38 105,38" fill="none" stroke="white" stroke-width="9" stroke-linejoin="miter"/>
+    <circle cx="60" cy="38" r="3.5" fill="white"/>
+    <circle cx="60" cy="38" r="1.5" fill="#1a2235"/>
+    <rect x="36" y="44" width="48" height="3" rx="1.5" fill="white"/>
+    <rect x="58" y="47" width="4" height="5" fill="white"/>
+    <ellipse cx="60" cy="54" rx="5" ry="2.5" fill="white"/>
+    <rect x="58.5" y="54" width="3" height="18" fill="white"/>
+    <ellipse cx="60" cy="73" rx="6" ry="2.5" fill="white"/>
+    <rect x="57" y="73" width="6" height="3" fill="white"/>
+    <ellipse cx="60" cy="78" rx="9" ry="3" fill="white"/>
+    <rect x="56" y="78" width="8" height="3" fill="white"/>
+    <rect x="53" y="81" width="14" height="3" rx="1" fill="white"/>
+    <line x1="40" y1="47" x2="38" y2="62" stroke="white" stroke-width="1.8"/>
+    <path d="M30,62 Q38,68 46,62" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <line x1="80" y1="47" x2="82" y2="62" stroke="white" stroke-width="1.8"/>
+    <path d="M74,62 Q82,68 90,62" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </svg>
+  <div class="logo-name">FILIPE FERREIRA</div>
+  <div class="gold-line"></div>
+  <div class="logo-sub">ADVOGADO &amp; ASSOCIADOS</div>
+  <div class="logo-oab">OAB/ES 37.159 &nbsp;&middot;&nbsp; DIREITO PREVIDENCIÁRIO</div>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <div class="card-intro">
+      <p>Esta ficha organiza as informações do seu caso no INSS antes da nossa conversa. Preencha com calma, com suas próprias palavras. Ao clicar em enviar, o WhatsApp abrirá automaticamente com suas respostas para o Dr. Filipe. Fotos e PDFs não podem ser anexados aqui. Sempre que uma pergunta pedir um documento, envie-o separadamente, na mesma conversa, logo depois desta ficha.</p>
+    </div>
+    <div class="body">
+
+      <div class="sec">
+        <div class="tag">Identificação</div>
+        <div class="g2">
+          <div><label class="lbl">Nome completo<span class="req">*</span></label><input type="text" id="nome" placeholder="Seu nome completo"></div>
+          <div><label class="lbl">WhatsApp<span class="req">*</span></label><input type="tel" id="tel" placeholder="(27) 99999-9999"></div>
+        </div>
+        <div class="g2">
+          <div><label class="lbl">Data de nascimento<span class="req">*</span></label><input type="date" id="nascimento"></div>
+          <div><label class="lbl">Profissão ou atividade</label><input type="text" id="profissao" placeholder="Ex: pedreiro, lavradora, vendedora"></div>
+        </div>
+        <div class="g2">
+          <div><label class="lbl">E-mail</label><input type="email" id="email" placeholder="seu@email.com"></div>
+          <div><label class="lbl">Cidade / Estado</label><input type="text" id="cidade" placeholder="Ex: Linhares/ES"></div>
+        </div>
+        <label class="lbl">Como conheceu o escritório?</label>
+        <div class="rg rr">
+          <label class="ro"><input type="radio" name="origem" value="Google"><span>Google</span></label>
+          <label class="ro"><input type="radio" name="origem" value="Instagram"><span>Instagram</span></label>
+          <label class="ro"><input type="radio" name="origem" value="YouTube"><span>YouTube</span></label>
+          <label class="ro"><input type="radio" name="origem" value="Indicação"><span>Indicação</span></label>
+          <label class="ro"><input type="radio" name="origem" value="Outro"><span>Outro</span></label>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">O que você precisa</div>
+        <label class="lbl">Qual é a sua situação hoje?<span class="req">*</span></label>
+        <div class="rg" id="situacao-g">
+          <label class="ro"><input type="radio" name="situacao" value="Quero pedir um benefício pela primeira vez"><span>Quero pedir um benefício pela primeira vez</span></label>
+          <label class="ro"><input type="radio" name="situacao" value="Pedi e o INSS ainda não respondeu"><span>Pedi e o INSS ainda não respondeu</span></label>
+          <label class="ro"><input type="radio" name="situacao" value="Pedi e o INSS negou"><span>Pedi e o INSS negou</span></label>
+          <label class="ro"><input type="radio" name="situacao" value="Recebia e o benefício foi cortado"><span>Recebia e o benefício foi cortado</span></label>
+          <label class="ro"><input type="radio" name="situacao" value="Recebo, mas acho que o valor está errado (revisão)"><span>Recebo, mas acho que o valor está errado (revisão)</span></label>
+          <label class="ro"><input type="radio" name="situacao" value="Quero planejar minha aposentadoria"><span>Quero planejar minha aposentadoria</span></label>
+          <label class="ro"><input type="radio" name="situacao" value="Não sei, quero orientação"><span>Não sei, quero orientação</span></label>
+        </div>
+        <div class="er" id="er-situacao">Selecione a sua situação para continuar.</div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Benefício</div>
+        <label class="lbl">Qual benefício tem relação com o seu caso?</label>
+        <span class="hint">Pode marcar mais de uma opção. Se não souber, deixe em branco.</span>
+        <div class="cg2" id="beneficio-g">
+          <label class="co"><input type="checkbox" value="Aposentadoria por idade"><span>Aposentadoria por idade</span></label>
+          <label class="co"><input type="checkbox" value="Aposentadoria por tempo de contribuição"><span>Aposentadoria por tempo de contribuição</span></label>
+          <label class="co"><input type="checkbox" value="Aposentadoria especial (trabalho insalubre ou perigoso)"><span>Aposentadoria especial (trabalho insalubre ou perigoso)</span></label>
+          <label class="co"><input type="checkbox" value="Aposentadoria rural"><span>Aposentadoria rural</span></label>
+          <label class="co"><input type="checkbox" value="Aposentadoria da pessoa com deficiência"><span>Aposentadoria da pessoa com deficiência</span></label>
+          <label class="co"><input type="checkbox" value="Auxílio-doença (incapacidade temporária)"><span>Auxílio-doença (incapacidade temporária)</span></label>
+          <label class="co"><input type="checkbox" value="Aposentadoria por invalidez (incapacidade permanente)"><span>Aposentadoria por invalidez (incapacidade permanente)</span></label>
+          <label class="co"><input type="checkbox" value="Auxílio-acidente"><span>Auxílio-acidente</span></label>
+          <label class="co"><input type="checkbox" value="BPC/LOAS (idoso ou pessoa com deficiência de baixa renda)"><span>BPC/LOAS (idoso ou pessoa com deficiência de baixa renda)</span></label>
+          <label class="co"><input type="checkbox" value="Pensão por morte"><span>Pensão por morte</span></label>
+          <label class="co"><input type="checkbox" value="Salário-maternidade"><span>Salário-maternidade</span></label>
+          <label class="co"><input type="checkbox" value="Auxílio-reclusão"><span>Auxílio-reclusão</span></label>
+          <label class="co"><input type="checkbox" value="Outro benefício"><span>Outro benefício</span></label>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Pedido no INSS</div>
+        <div class="g2">
+          <div><label class="lbl">Número do benefício (NB), se souber</label><input type="text" id="nb" placeholder="Ex: 123.456.789-0"></div>
+          <div><label class="lbl">Data em que fez o pedido</label><input type="date" id="der"></div>
+        </div>
+        <div class="g2">
+          <div><label class="lbl">Data da negativa ou do corte</label><input type="date" id="data_negativa"></div>
+          <div><label class="lbl">Motivo informado pelo INSS</label><input type="text" id="motivo" placeholder="Ex: falta de tempo de contribuição"></div>
+        </div>
+        <label class="lbl">Já existe recurso ou processo?</label>
+        <div class="rg rr">
+          <label class="ro"><input type="radio" name="processo" value="Não existe nada ainda"><span>Não</span></label>
+          <label class="ro"><input type="radio" name="processo" value="Recurso no próprio INSS"><span>Recurso no INSS</span></label>
+          <label class="ro"><input type="radio" name="processo" value="Processo na Justiça"><span>Processo na Justiça</span></label>
+        </div>
+        <div style="margin-top:0.8rem">
+          <label class="lbl">Número do processo ou do recurso, se souber</label>
+          <input type="text" id="processo_numero">
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Histórico de trabalho</div>
+        <label class="lbl">Como você trabalhou ao longo da vida?</label>
+        <span class="hint">Pode marcar mais de uma opção.</span>
+        <div class="cg2" id="historico-g">
+          <label class="co"><input type="checkbox" value="Carteira assinada"><span>Carteira assinada</span></label>
+          <label class="co"><input type="checkbox" value="Autônomo ou contribuinte individual"><span>Autônomo ou contribuinte individual</span></label>
+          <label class="co"><input type="checkbox" value="MEI"><span>MEI</span></label>
+          <label class="co"><input type="checkbox" value="Trabalho na roça ou pesca"><span>Trabalho na roça ou pesca</span></label>
+          <label class="co"><input type="checkbox" value="Serviço público"><span>Serviço público</span></label>
+          <label class="co"><input type="checkbox" value="Trabalho sem registro"><span>Trabalho sem registro</span></label>
+          <label class="co"><input type="checkbox" value="Contribuí como dona(o) de casa (facultativo)"><span>Contribuí como dona(o) de casa (facultativo)</span></label>
+          <label class="co"><input type="checkbox" value="Serviço militar"><span>Serviço militar</span></label>
+        </div>
+        <div style="margin-top:1rem">
+          <label class="lbl">Já trabalhou exposto(a) a ruído alto, produtos químicos, eletricidade, agentes biológicos ou outro risco à saúde?</label>
+          <div class="rg rr">
+            <label class="ro"><input type="radio" name="especial" value="Sim"><span>Sim</span></label>
+            <label class="ro"><input type="radio" name="especial" value="Não"><span>Não</span></label>
+            <label class="ro"><input type="radio" name="especial" value="Não sei"><span>Não sei</span></label>
+          </div>
+        </div>
+        <div class="g2" style="margin-top:1rem">
+          <div><label class="lbl">Tempo aproximado de contribuição</label><input type="text" id="tempo_contrib" placeholder="Ex: 28 anos"></div>
+          <div>
+            <label class="lbl">Ainda contribui para o INSS?</label>
+            <div class="rg rr">
+              <label class="ro"><input type="radio" name="contribui" value="Sim"><span>Sim</span></label>
+              <label class="ro"><input type="radio" name="contribui" value="Não"><span>Não</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Saúde</div>
+        <span class="hint">Responda se o caso envolve doença, acidente ou deficiência. Se não envolve, pule esta parte.</span>
+        <div style="margin-bottom:12px">
+          <label class="lbl">Qual doença, lesão ou deficiência?</label>
+          <input type="text" id="saude_doenca" placeholder="Ex: hérnia de disco, depressão, perda auditiva">
+        </div>
+        <label class="lbl">Está afastado(a) ou sem conseguir trabalhar?</label>
+        <div class="rg rr">
+          <label class="ro"><input type="radio" name="afastado" value="Sim"><span>Sim</span></label>
+          <label class="ro"><input type="radio" name="afastado" value="Não"><span>Não</span></label>
+        </div>
+        <div style="margin-top:1rem">
+          <label class="lbl">Tem laudos, atestados ou exames recentes?</label>
+          <div class="rg rr">
+            <label class="ro"><input type="radio" name="laudos" value="Sim"><span>Sim</span></label>
+            <label class="ro"><input type="radio" name="laudos" value="Não"><span>Não</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Família e renda</div>
+        <span class="hint">Importante para BPC/LOAS e pensão por morte. Se não for o seu caso, pule esta parte.</span>
+        <div class="g2">
+          <div><label class="lbl">Quantas pessoas moram na sua casa?</label><input type="text" id="pessoas_casa" placeholder="Ex: 3"></div>
+          <div><label class="lbl">Renda total da família por mês</label><input type="text" id="renda_familia" placeholder="R$"></div>
+        </div>
+        <div class="g2">
+          <div>
+            <label class="lbl">Está inscrito(a) no CadÚnico?</label>
+            <div class="rg rr">
+              <label class="ro"><input type="radio" name="cadunico" value="Sim"><span>Sim</span></label>
+              <label class="ro"><input type="radio" name="cadunico" value="Não"><span>Não</span></label>
+              <label class="ro"><input type="radio" name="cadunico" value="Não sei"><span>Não sei</span></label>
+            </div>
+          </div>
+          <div><label class="lbl">Pensão por morte: data do falecimento e parentesco</label><input type="text" id="pensao_info" placeholder="Ex: 10/03/2026, esposo"></div>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Conte o que aconteceu</div>
+        <label class="lbl">Descreva a situação com suas palavras<span class="req">*</span></label>
+        <span class="hint">Inclua datas e a ordem dos fatos, do jeito que você se lembra. Não se preocupe com termos jurídicos.</span>
+        <textarea id="descricao" rows="6" placeholder="Descreva sua situação com o máximo de detalhes possível..."></textarea>
+        <div class="cc" id="cc">0 caracteres</div>
+        <div class="er" id="er-desc">Descreva brevemente o que aconteceu para continuar.</div>
+      </div>
+
+      <div class="sec" style="margin-top:1rem">
+        <label class="lbl">O que você espera resolver?</label>
+        <textarea id="expectativa" rows="3" placeholder="Ex: conseguir minha aposentadoria, voltar a receber o auxílio..."></textarea>
+      </div>
+
+      <div class="sec" style="margin-top:1rem">
+        <label class="lbl">Existe algum prazo, perícia ou audiência marcada?</label>
+        <input type="text" id="prazo" placeholder="Ex: perícia no INSS em 20/11, audiência em 05/12...">
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Documentos disponíveis</div>
+        <label class="lbl">Marque o que você já tem em mãos e vai enviar por foto ou PDF nesta conversa</label>
+        <div class="cg" id="docs-g">
+          <label class="co"><input type="checkbox" value="RG e CPF"><span>RG e CPF</span></label>
+          <label class="co"><input type="checkbox" value="CNIS (extrato de contribuições do Meu INSS)"><span>CNIS (extrato de contribuições do Meu INSS)</span></label>
+          <label class="co"><input type="checkbox" value="Carteira de trabalho (CTPS)"><span>Carteira de trabalho (CTPS)</span></label>
+          <label class="co"><input type="checkbox" value="Carta de negativa ou decisão do INSS"><span>Carta de negativa ou decisão do INSS</span></label>
+          <label class="co"><input type="checkbox" value="Laudos, atestados e exames"><span>Laudos, atestados e exames</span></label>
+          <label class="co"><input type="checkbox" value="PPP ou LTCAT (trabalho insalubre ou perigoso)"><span>PPP ou LTCAT (trabalho insalubre ou perigoso)</span></label>
+          <label class="co"><input type="checkbox" value="Documentos rurais (bloco de produtor, ITR, declaração do sindicato)"><span>Documentos rurais (bloco de produtor, ITR, declaração do sindicato)</span></label>
+          <label class="co"><input type="checkbox" value="Certidões (nascimento, casamento ou óbito)"><span>Certidões (nascimento, casamento ou óbito)</span></label>
+          <label class="co"><input type="checkbox" value="Carnês ou guias de contribuição"><span>Carnês ou guias de contribuição</span></label>
+          <label class="co"><input type="checkbox" value="Comprovante de residência"><span>Comprovante de residência</span></label>
+          <label class="co"><input type="checkbox" value="Outros documentos que considero úteis"><span>Outros documentos que considero úteis</span></label>
+        </div>
+        <div class="warn">
+          <p>📎 Envie agora, em foto ou PDF, cada um dos documentos marcados acima, um de cada vez, nesta mesma conversa. <strong>Dica:</strong> o CNIS pode ser baixado no aplicativo ou no site Meu INSS.</p>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Urgência</div>
+        <label class="lbl">Qual é a urgência da sua situação?</label>
+        <span class="hint">1 = sem pressa &nbsp; 5 = muito urgente</span>
+        <div class="sw" id="urg-g">
+          <button class="sb" type="button" onclick="setSc('urg',1)">1</button>
+          <button class="sb" type="button" onclick="setSc('urg',2)">2</button>
+          <button class="sb" type="button" onclick="setSc('urg',3)">3</button>
+          <button class="sb" type="button" onclick="setSc('urg',4)">4</button>
+          <button class="sb" type="button" onclick="setSc('urg',5)">5</button>
+        </div>
+        <div class="sl"><span class="slb">Sem pressa</span><span class="slb">Muito urgente</span></div>
+        <div style="margin-top:1.1rem">
+          <label class="lbl">Você está sem nenhuma renda neste momento?</label>
+          <div class="rg rr">
+            <label class="ro"><input type="radio" name="sem_renda" value="Sim"><span>Sim</span></label>
+            <label class="ro"><input type="radio" name="sem_renda" value="Não"><span>Não</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="div"></div>
+
+      <div class="sec">
+        <div class="tag">Proteção de dados (LGPD)</div>
+        <div class="lgpd">
+          <p>Os dados desta ficha e os documentos enviados serão usados somente para analisar o seu caso e entrar em contato com você. Eles ficam sob sigilo profissional, não são vendidos nem usados para outra finalidade e só passam pelas ferramentas de atendimento do escritório, inclusive as automatizadas. Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo WhatsApp do escritório (Lei 13.709/2018, LGPD).</p>
+        </div>
+        <label class="co" style="margin-top:0.8rem"><input type="checkbox" id="lgpd"><span>Li e autorizo o tratamento dos meus dados, inclusive dados de saúde, quando houver, pelo escritório Filipe Ferreira Advogados &amp; Associados, para as finalidades acima.<span class="req">*</span></span></label>
+        <div class="er" id="er-lgpd">Para enviar a ficha, é preciso autorizar o tratamento dos dados.</div>
+      </div>
+
+      <div class="div"></div>
+
+      <a id="wbtn" class="wbtn" href="#" onclick="return enviar()">
+        &#9993; Enviar ficha pelo WhatsApp
+      </a>
+      <p class="hl">Ao clicar, o WhatsApp abrirá com a ficha preenchida.<br>Depois de enviar, mande as fotos e os PDFs marcados, um de cada vez, na mesma conversa.</p>
+
+    </div>
+    <div class="foot">
+      <p>Filipe Ferreira Advogados &amp; Associados &nbsp;&middot;&nbsp; OAB/ES 37.159<br>Direito Previdenciário &middot; Trabalho &middot; Família e Sucessões</p>
+    </div>
+  </div>
+</div>
+
+<script>
+var sc = {urg:0};
+
+document.querySelectorAll(".ro input").forEach(function(r){
+  r.addEventListener("change", function(){
+    var n = this.name;
+    document.querySelectorAll("input[name="+n+"]").forEach(function(i){
+      i.closest(".ro").classList.remove("sel");
+    });
+    this.closest(".ro").classList.add("sel");
+  });
+});
+
+document.querySelectorAll(".co input").forEach(function(c){
+  c.addEventListener("change", function(){
+    this.closest(".co").classList.toggle("sel", this.checked);
+  });
+});
+
+document.getElementById("descricao").addEventListener("input", function(){
+  document.getElementById("cc").textContent = this.value.length + " caracteres";
+});
+
+function setSc(g, v){
+  sc[g] = v;
+  document.querySelectorAll("#"+g+"-g .sb").forEach(function(b,i){
+    b.classList.toggle("sel", i+1===v);
+  });
+}
+
+var WHATSAPP_DESTINO = "5527995187279"; // DDI 55 + DDD 27 + 99518-7279
+
+function gR(n){
+  var e = document.querySelector("input[name="+n+"]:checked");
+  return e ? e.value : "Não informado";
+}
+
+function gC(id){
+  var v = [];
+  document.querySelectorAll("#"+id+" input:checked").forEach(function(c){ v.push(c.value); });
+  return v.length ? v.join("; ") : "Não informado";
+}
+
+function gV(id){
+  var e = document.getElementById(id);
+  return (e && e.value.trim()) ? e.value.trim() : "Não informado";
+}
+
+function gD(id){
+  var v = document.getElementById(id).value; // aaaa-mm-dd
+  if(!v) return "Não informado";
+  var p = v.split("-");
+  return p[2]+"/"+p[1]+"/"+p[0];
+}
+
+function idade(id){
+  var v = document.getElementById(id).value;
+  if(!v) return "";
+  var n = new Date(v+"T00:00:00"), h = new Date();
+  var a = h.getFullYear() - n.getFullYear();
+  if(h.getMonth() < n.getMonth() || (h.getMonth() === n.getMonth() && h.getDate() < n.getDate())) a--;
+  return " ("+a+" anos)";
+}
+
+function enviar(){
+  var nome = document.getElementById("nome").value.trim();
+  var tel = document.getElementById("tel").value.trim();
+  var nasc = document.getElementById("nascimento").value;
+  var situacao = gR("situacao");
+  var desc = document.getElementById("descricao").value.trim();
+  var ok = true;
+
+  if(!nome || !tel || !nasc){ alert("Preencha nome, WhatsApp e data de nascimento para continuar."); return false; }
+  if(situacao === "Não informado"){ document.getElementById("er-situacao").style.display="block"; ok=false; }
+  else{ document.getElementById("er-situacao").style.display="none"; }
+  if(!desc){ document.getElementById("er-desc").style.display="block"; ok=false; }
+  else{ document.getElementById("er-desc").style.display="none"; }
+  if(!document.getElementById("lgpd").checked){ document.getElementById("er-lgpd").style.display="block"; ok=false; }
+  else{ document.getElementById("er-lgpd").style.display="none"; }
+  if(!ok) return false;
+
+  var ug = sc.urg ? sc.urg+"/5" : "Não informado";
+
+  var msg = [
+    "*FICHA DE TRIAGEM PREVIDENCIÁRIA*",
+    "*Filipe Ferreira Advogados*",
+    "",
+    "*IDENTIFICAÇÃO*",
+    "Nome: "+nome,
+    "WhatsApp: "+tel,
+    "Nascimento: "+gD("nascimento")+idade("nascimento"),
+    "Profissão/atividade: "+gV("profissao"),
+    "E-mail: "+gV("email"),
+    "Cidade/UF: "+gV("cidade"),
+    "Como conheceu: "+gR("origem"),
+    "",
+    "*SITUAÇÃO*",
+    situacao,
+    "",
+    "*BENEFÍCIO*",
+    gC("beneficio-g"),
+    "",
+    "*PEDIDO NO INSS*",
+    "NB: "+gV("nb"),
+    "Data do pedido: "+gD("der"),
+    "Data da negativa/corte: "+gD("data_negativa"),
+    "Motivo do INSS: "+gV("motivo"),
+    "Recurso/processo: "+gR("processo"),
+    "Número: "+gV("processo_numero"),
+    "",
+    "*HISTÓRICO DE TRABALHO*",
+    gC("historico-g"),
+    "Exposição a agentes nocivos: "+gR("especial"),
+    "Tempo de contribuição: "+gV("tempo_contrib"),
+    "Ainda contribui: "+gR("contribui"),
+    "",
+    "*SAÚDE*",
+    "Doença/lesão: "+gV("saude_doenca"),
+    "Afastado(a): "+gR("afastado"),
+    "Laudos recentes: "+gR("laudos"),
+    "",
+    "*FAMÍLIA E RENDA*",
+    "Pessoas na casa: "+gV("pessoas_casa"),
+    "Renda familiar: "+gV("renda_familia"),
+    "CadÚnico: "+gR("cadunico"),
+    "Pensão por morte: "+gV("pensao_info"),
+    "",
+    "*DESCRIÇÃO DO CASO*",
+    desc,
+    "",
+    "*EXPECTATIVA*",
+    gV("expectativa"),
+    "",
+    "*PRAZO CRÍTICO*",
+    gV("prazo"),
+    "",
+    "*DOCUMENTOS MARCADOS (enviar em foto/PDF a seguir)*",
+    gC("docs-g"),
+    "",
+    "*URGÊNCIA*",
+    "Nível: "+ug,
+    "Sem renda no momento: "+gR("sem_renda"),
+    "",
+    "*LGPD*",
+    "Autorizou o tratamento dos dados em " + new Date().toLocaleString("pt-BR")
+  ];
+
+  document.getElementById("wbtn").href = "https://api.whatsapp.com/send?phone=" + WHATSAPP_DESTINO + "&text=" + encodeURIComponent(msg.join("\n"));
+  return true;
+}
+</script>
+</body>
+</html>
